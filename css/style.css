@@ -11,6 +11,10 @@ main{
     height:100%;
 
 }
+div{
+    display:flex;
+    flex-wrap:wrap;
+}
 
 .emoji {
     border: 1px solid #222;
