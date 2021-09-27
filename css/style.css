@@ -1,5 +1,4 @@
 body {
-
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto;
@@ -7,41 +6,17 @@ body {
     color: #222;
     grid-template-areas: 
     "header header"
-    "div div"
-    "div div";
+    "smile beer"
+    "tears seed";
     gap: 10px;
-    
+    }
 
-}
-
-/*main{
-    display:grid;
-    width:100%;
-    padding:20px;
-
-}
-
-
-/*a{
-    display:flex;
-}
-
-h1{
-    display:flex;
-    padding:20px;
-}
-
-span{
-    display: flex;
-    align-items:center;
-}*/
-
-emojis{
+.emojis{
     display:flex;
     flex-wrap: wrap;
-    flex-direction:row;
+   /* flex-direction:row;
     justify-content: space-around;
-    align-items:flex-start;
+    align-items:flex-start;*/
 }
 
 .emoji {
@@ -69,10 +44,21 @@ emojis{
     align-items: center;
 }
 .emoji:nth-child(1){
-    grid-column: 1/2;
-
+    grid-area: header;
 }
 
 .emoji:nth-child(2){
-    grid-column: 2;
+    grid-area: smile;
+}
+
+.emoji:nth-child(3){
+    grid-area: beer;
+}
+
+.emoji:nth-child(4){
+    grid-area: tears;
+}
+
+.emoji:nth-child(5){
+    grid-area: seed;
 }
