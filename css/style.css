@@ -1,6 +1,6 @@
 .emojis {
     display: grid;
-    grid-template-rows: 50px 50px ;
+    grid-template-rows: 5opx;
     grid-template-columns: 50% 50%;
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
@@ -12,8 +12,8 @@
     }
 
 .emoji {
-   display:flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-direction:column;
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
@@ -33,15 +33,17 @@
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    max-width:100%;
-    align-self: flex-start;
+    margin-top: auto;
+    
 }
 
 .icon {
    
     font-size: 4rem;
-    align-self: center;
+    text-align: center;
+    order:-1;
 }
+
 .emoji:nth-child(1){
     grid-column:1;
     grid-row:1;
