@@ -1,7 +1,7 @@
-body {
+.emojis {
     display: grid;
+    grid-template-rows: 50px 100px 100px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
     grid-template-areas: 
@@ -11,15 +11,16 @@ body {
     gap: 10px;
     }
 
-.emojis{
+/*.emojis{
     display:flex;
     flex-wrap: wrap;
    /* flex-direction:row;
     justify-content: space-around;
     align-items:flex-start;*/
-}
+
 
 .emoji {
+    
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
